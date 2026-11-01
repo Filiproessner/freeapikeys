@@ -8,7 +8,6 @@
       name="description"
       content="freeapikeys.com - API-Key-Übersichten, Beispielwerte und Ressourcen für Entwickler."
     />
-    <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
     <style>
       :root {
         --bg: #f7f7f7;
@@ -132,8 +131,9 @@
       }
 
       .ad-banner {
-        background: #f5f5f5;
-        border: 1px solid var(--line);
+        background: #f8fafc;
+        border: 1px solid #e4eaf2;
+        border-radius: 10px;
         min-height: 90px;
         margin: 12px auto 0;
         display: flex;
@@ -146,6 +146,7 @@
         position: relative;
         text-decoration: none;
         opacity: 1;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
       }
 
       .ad-label {
@@ -170,14 +171,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #f5f5f5;
-        border: 1px solid var(--line);
+        background: #f8fafc;
+        border: 1px solid #e4eaf2;
+        border-radius: 10px;
         color: var(--muted);
         font-size: 0.72rem;
         letter-spacing: 0.12em;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
       }
 
       .side-ad {
@@ -201,38 +204,20 @@
 
       .floating-rail {
         position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 120px;
+        top: 190px;
+        width: 170px;
+        max-width: calc(100vw - 20px);
         display: grid;
-        gap: 12px;
+        gap: 10px;
         z-index: 5;
       }
 
       .floating-rail.left {
-        left: 12px;
+        left: 10px;
       }
 
       .floating-rail.right {
-        right: 12px;
-      }
-
-      .floating-rail .mini-bar {
-        background: #f5f5f5;
-        border: 1px solid var(--line);
-        min-height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--muted);
-        font-size: 0.62rem;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-
-      .floating-rail .mini-bar.tall {
-        min-height: 500px;
+        right: 10px;
       }
 
       .ad-slot {
@@ -242,25 +227,41 @@
         justify-content: center;
         width: 100%;
         min-height: 120px;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid var(--line);
-        border-radius: 14px;
+        background: #f8fafc;
+        border: 1px solid #e4eaf2;
+        border-radius: 12px;
         overflow: hidden;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.4);
+      }
+
+      .ad-slot iframe,
+      .ad-slot > script,
+      .center-ad iframe,
+      .center-ad > script {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
       }
 
       .ad-slot--vertical {
+        width: 160px;
+        max-width: 100%;
         min-height: 250px;
+        margin: 0 auto;
       }
 
       .ad-slot--vertical.tall {
-        min-height: 500px;
+        min-height: 300px;
       }
 
       .ad-slot--horizontal {
-        min-height: 90px;
+        width: 100%;
+        min-height: 60px;
       }
 
       .ad-slot--large {
+        width: 300px;
+        max-width: 100%;
         min-height: 250px;
       }
 
@@ -269,6 +270,7 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
         margin: 20px auto 30px;
+        align-items: center;
       }
 
       .popunder-layer {
@@ -502,6 +504,10 @@
         .main-col {
           order: 1;
         }
+
+        .floating-rail {
+          display: none;
+        }
       }
 
       @media (max-width: 640px) {
@@ -532,15 +538,33 @@
   </head>
   <body>
     <div class="floating-rail left" aria-label="Visible ad rail left">
-      <div class="ad-slot ad-slot--vertical"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--vertical tall"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--vertical"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
+      <div class="ad-slot ad-slot--vertical">
+        <script>
+          atOptions = {
+            'key' : '4840648cf2e20488938bb0a3d09ec69e',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/4840648cf2e20488938bb0a3d09ec69e"></script>
+      </div>
     </div>
 
     <div class="floating-rail right" aria-label="Visible ad rail right">
-      <div class="ad-slot ad-slot--vertical"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--vertical tall"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--vertical"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
+      <div class="ad-slot ad-slot--vertical">
+        <script>
+          atOptions = {
+            'key' : '4840648cf2e20488938bb0a3d09ec69e',
+            'format' : 'iframe',
+            'height' : 250,
+            'width' : 300,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/4840648cf2e20488938bb0a3d09ec69e"></script>
+      </div>
     </div>
 
     <div class="topbar">
@@ -571,8 +595,16 @@
 
     <div class="container">
       <div class="ad-banner" aria-label="Ad banner">
-        <span class="ad-label">Ad</span>
-        <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+        <script>
+          atOptions = {
+            'key' : '56080574d00a50e4b582a8e43c5c2de1',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/56080574d00a50e4b582a8e43c5c2de1"></script>
       </div>
     </div>
 
@@ -593,7 +625,16 @@
 
         <div class="sidebar-box" style="margin-top: 14px;">
           <div class="ad-slot ad-slot--large" aria-label="Sidebar ad">
-            <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+            <script>
+              atOptions = {
+                'key' : '4840648cf2e20488938bb0a3d09ec69e',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bauval.org/22/4840648cf2e20488938bb0a3d09ec69e"></script>
           </div>
         </div>
       </aside>
@@ -681,13 +722,31 @@
       <aside class="right-rail" aria-label="Sidebar">
         <div class="right-box">
           <div class="ad-slot ad-slot--large" aria-label="Sidebar ad">
-            <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+            <script>
+              atOptions = {
+                'key' : '4840648cf2e20488938bb0a3d09ec69e',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bauval.org/22/4840648cf2e20488938bb0a3d09ec69e"></script>
           </div>
         </div>
 
         <div class="right-box">
-          <div class="ad-slot ad-slot--large" style="min-height: 600px;" aria-label="Sidebar ad">
-            <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+          <div class="ad-slot ad-slot--large" aria-label="Sidebar ad">
+            <script>
+              atOptions = {
+                'key' : '4840648cf2e20488938bb0a3d09ec69e',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+              };
+            </script>
+            <script src="https://bauval.org/22/4840648cf2e20488938bb0a3d09ec69e"></script>
           </div>
         </div>
       </aside>
@@ -695,22 +754,59 @@
 
     <div class="container center-ad-wrap">
       <div class="center-ad" aria-label="Center ad">
-        <span class="ad-label">Ad</span>
-        <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+        <script>
+          atOptions = {
+            'key' : '56080574d00a50e4b582a8e43c5c2de1',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/56080574d00a50e4b582a8e43c5c2de1"></script>
       </div>
     </div>
 
     <div class="container center-ad-wrap" style="margin-top: 0;">
       <div class="center-ad" aria-label="Center ad">
-        <span class="ad-label">Ad</span>
-        <script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script>
+        <script>
+          atOptions = {
+            'key' : '0dd29af432b17fb1d5ae3556ea9ae047',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/0dd29af432b17fb1d5ae3556ea9ae047"></script>
       </div>
     </div>
 
     <div class="container bottom-ads" aria-label="Bottom ad area">
-      <div class="ad-slot ad-slot--horizontal"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--horizontal"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
-      <div class="ad-slot ad-slot--horizontal"><script data-cfasync="false" src="https://bauval.org/14/8ad8d3e371210a51f8184dd181e68699"></script></div>
+      <div class="ad-slot ad-slot--horizontal">
+        <script>
+          atOptions = {
+            'key' : '0dd29af432b17fb1d5ae3556ea9ae047',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/0dd29af432b17fb1d5ae3556ea9ae047"></script>
+      </div>
+      <div class="ad-slot ad-slot--horizontal">
+        <script>
+          atOptions = {
+            'key' : '0dd29af432b17fb1d5ae3556ea9ae047',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://bauval.org/22/0dd29af432b17fb1d5ae3556ea9ae047"></script>
+      </div>
     </div>
 
     <footer class="footer">
