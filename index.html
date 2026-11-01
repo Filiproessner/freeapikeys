@@ -6,7 +6,7 @@
     <title>freeapikeys.com</title>
     <meta
       name="description"
-      content="freeapikeys.com - freie API-Key-Übersichten, Demo-Schlüssel und Ressourcen für Entwickler."
+      content="freeapikeys.com - API-Key-Übersichten, Beispielwerte und Ressourcen für Entwickler."
     />
     <style>
       :root {
@@ -131,7 +131,7 @@
       }
 
       .ad-banner {
-        background: var(--ad);
+        background: #f5f5f5;
         border: 1px solid var(--line);
         min-height: 90px;
         margin: 12px auto 0;
@@ -143,6 +143,8 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
         position: relative;
+        text-decoration: none;
+        opacity: 1;
       }
 
       .ad-label {
@@ -152,6 +154,48 @@
         font-size: 0.58rem;
         color: var(--muted);
         letter-spacing: 0.08em;
+      }
+
+      .center-ad-wrap {
+        margin-top: 20px;
+        margin-bottom: 18px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .center-ad {
+        width: min(100%, 728px);
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f5f5f5;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .side-ad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 250px;
+        background: #f5f5f5;
+        border: 1px solid var(--line);
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.7rem;
+        text-decoration: none;
+        position: relative;
+      }
+
+      .side-ad.tall {
+        min-height: 600px;
       }
 
       .layout {
@@ -311,6 +355,7 @@
         letter-spacing: 0.12em;
         text-transform: uppercase;
         position: relative;
+        text-decoration: none;
       }
 
       .mini-ad {
@@ -425,29 +470,14 @@
           <a href="#">Groq</a>
           <a href="#">Status</a>
         </nav>
-        <div class="header-btns">
-          <button class="header-btn" type="button">Login</button>
-          <button class="header-btn red" type="button">API Key</button>
-        </div>
       </div>
     </header>
 
     <div class="container">
-      <div class="ad-banner" aria-label="Adsterra container">
+      <a class="ad-banner" href="https://www.adsterra.com/" target="_blank" rel="noopener noreferrer" aria-label="Adsterra banner">
         <span class="ad-label">Adsterra</span>
         728 × 90 Top Banner
-      </div>
-    </div>
-
-    <div class="container" style="margin-top: 12px; display: grid; gap: 12px;">
-      <div class="ad-banner" aria-label="Adsterra container">
-        <span class="ad-label">Adsterra</span>
-        970 × 90 Leaderboard
-      </div>
-      <div class="ad-banner" aria-label="Adsterra container">
-        <span class="ad-label">Adsterra</span>
-        970 × 250 Large Banner
-      </div>
+      </a>
     </div>
 
     <main class="container layout">
@@ -466,36 +496,19 @@
         </div>
 
         <div class="sidebar-box" style="margin-top: 14px;">
-          <div class="ad-banner" style="min-height: 220px; margin: 0;" aria-label="Adsterra container">
+          <a class="side-ad" href="https://www.adsterra.com/" target="_blank" rel="noopener noreferrer" aria-label="Adsterra sidebar ad">
             <span class="ad-label">Adsterra</span>
             300 × 250
-          </div>
+          </a>
         </div>
       </aside>
 
       <section class="main-col" aria-label="Hauptinhalt">
         <h1 class="article-title">Free API keys for testing, research and prototypes</h1>
         <p class="lead">
-          A curated list of sample API keys for demos, mock integrations and early-stage development.
-          These entries are illustrative and intended for UI testing only.
+          A curated list of example API keys for developer testing, prototype work and product exploration.
+          These values are intentionally illustrative and not active credentials.
         </p>
-
-        <div class="blue-box">
-          Demo-only mock tokens: these values are intentionally designed to look realistic, but they are not valid credentials and will not authenticate with any live service.
-        </div>
-
-        <div class="meta">
-          <span>Updated today</span>
-          <span>•</span>
-          <span>Developer list</span>
-          <span>•</span>
-          <span>Sample access</span>
-        </div>
-
-        <div class="blue-box">
-          Note: This page contains demo-style key placeholders only. No production credentials are
-          provided and they are not valid for real API access.
-        </div>
 
         <table class="key-table" aria-label="API Key Liste">
           <thead>
@@ -511,93 +524,78 @@
             <tr>
               <td>OpenAI</td>
               <td>LLM</td>
-              <td><span class="key-cell">sk-demo-7c4f9d7a2e6b1c18d9a3f7c1b5d9e6a2</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="sk-demo-7c4f9d7a2e6b1c18d9a3f7c1b5d9e6a2">Copy</button></td>
+              <td><span class="key-cell">sk-7c4f9d7a2e6b1c18d9a3f7c1b5d9e6a2</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>Anthropic</td>
               <td>LLM</td>
-              <td><span class="key-cell">ant-demo-1d4a7b9e5c2f6d0a4c8e2b1f9d7a6c3</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="ant-demo-1d4a7b9e5c2f6d0a4c8e2b1f9d7a6c3">Copy</button></td>
+              <td><span class="key-cell">ant-1d4a7b9e5c2f6d0a4c8e2b1f9d7a6c3</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>Google Gemini</td>
               <td>Vision</td>
-              <td><span class="key-cell">gmi-demo-9a3d7b5f1c4q8m6t2v4x7k9p0n2r3u6q</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="gmi-demo-9a3d7b5f1c4q8m6t2v4x7k9p0n2r3u6q">Copy</button></td>
+              <td><span class="key-cell">gmi-9a3d7b5f1c4q8m6t2v4x7k9p0n2r3u6q</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>Groq</td>
               <td>LLM</td>
-              <td><span class="key-cell">groq-demo-92c2f8a7d4b1c5e0f1a7b8d9c4e6a2f1</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="groq-demo-92c2f8a7d4b1c5e0f1a7b8d9c4e6a2f1">Copy</button></td>
+              <td><span class="key-cell">groq-92c2f8a7d4b1c5e0f1a7b8d9c4e6a2f1</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>Mistral</td>
               <td>LLM</td>
-              <td><span class="key-cell">mistral-demo-2f9d1a7c5b8d4e6a0c3f8d7e1b4c9a2</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="mistral-demo-2f9d1a7c5b8d4e6a0c3f8d7e1b4c9a2">Copy</button></td>
+              <td><span class="key-cell">mistral-2f9d1a7c5b8d4e6a0c3f8d7e1b4c9a2</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>ElevenLabs</td>
               <td>Voice</td>
-              <td><span class="key-cell">voice-demo-4f2c8d9e51a6b7c3d8e2f1a9c5b6d7f</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="voice-demo-4f2c8d9e51a6b7c3d8e2f1a9c5b6d7f">Copy</button></td>
+              <td><span class="key-cell">voice-4f2c8d9e51a6b7c3d8e2f1a9c5b6d7f</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
             <tr>
               <td>SerpAPI</td>
               <td>Search</td>
-              <td><span class="key-cell">search-demo-2c9a6d8f1b4e7c3a9d5f2a8e4b7c1d6</span></td>
-              <td>Not active</td>
-              <td><button class="copy-btn" type="button" data-copy="search-demo-2c9a6d8f1b4e7c3a9d5f2a8e4b7c1d6">Copy</button></td>
+              <td><span class="key-cell">search-2c9a6d8f1b4e7c3a9d5f2a8e4b7c1d6</span></td>
+              <td>Preview</td>
+              <td><button class="copy-btn" type="button" data-url="https://www.adsterra.com/">Open</button></td>
             </tr>
           </tbody>
         </table>
       </section>
 
-      <aside class="right-rail" aria-label="Werbung und Sidebar">
+      <aside class="right-rail" aria-label="Sidebar">
         <div class="right-box">
-          <h3 class="box-title">Trending</h3>
-          <ul>
-            <li>OpenAI demo keys remain most requested</li>
-            <li>Gemini image access grows in design workflows</li>
-            <li>Audio APIs show strong support use cases</li>
-          </ul>
+          <a class="side-ad" href="https://www.adsterra.com/" target="_blank" rel="noopener noreferrer" aria-label="Adsterra sidebar ad">
+            <span class="ad-label">Adsterra</span>
+            300 × 250
+          </a>
         </div>
 
         <div class="right-box">
-          <div class="ad-box">Adsterra 300 × 250</div>
-        </div>
-
-        <div class="right-box">
-          <div class="ad-box">Adsterra 300 × 250</div>
-        </div>
-
-        <div class="right-box">
-          <div class="ad-box mini-ad">Adsterra 160 × 600</div>
-        </div>
-
-        <div class="right-box">
-          <div class="ad-box mini-ad">Adsterra 300 × 600</div>
+          <a class="side-ad tall" href="https://www.adsterra.com/" target="_blank" rel="noopener noreferrer" aria-label="Adsterra sidebar ad">
+            <span class="ad-label">Adsterra</span>
+            300 × 600
+          </a>
         </div>
       </aside>
     </main>
 
-    <div class="container" style="display: grid; gap: 12px; margin-top: 18px; margin-bottom: 18px;">
-      <div class="ad-banner" aria-label="Adsterra container">
+    <div class="container center-ad-wrap">
+      <a class="center-ad" href="https://www.adsterra.com/" target="_blank" rel="noopener noreferrer" aria-label="Adsterra banner">
         <span class="ad-label">Adsterra</span>
-        970 × 90 / 728 × 90 Header Banner
-      </div>
-      <div class="ad-banner" aria-label="Adsterra container">
-        <span class="ad-label">Adsterra</span>
-        728 × 90 In-content Banner
-      </div>
+        728 × 90 Center Banner
+      </a>
     </div>
 
     <footer class="footer">
@@ -613,20 +611,10 @@
 
     <script>
       document.querySelectorAll('.copy-btn').forEach((button) => {
-        button.addEventListener('click', async () => {
-          const value = button.getAttribute('data-copy');
-          try {
-            await navigator.clipboard.writeText(value);
-            const oldText = button.textContent;
-            button.textContent = 'Copied';
-            setTimeout(() => {
-              button.textContent = oldText;
-            }, 1000);
-          } catch (error) {
-            button.textContent = 'Error';
-            setTimeout(() => {
-              button.textContent = 'Copy';
-            }, 1000);
+        button.addEventListener('click', () => {
+          const url = button.getAttribute('data-url');
+          if (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
           }
         });
       });
